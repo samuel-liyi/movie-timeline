@@ -1,0 +1,17 @@
+{
+  "name": "movie-timeline",
+  "version": "0.0.1",
+  "description": "a simple movie timeline app with data from douban api",
+  "main": "",
+  "scripts": {},
+  "author": "liyi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuel-liyi/movie-timeline"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "vis": "^4.16.1"
+  }
+}
