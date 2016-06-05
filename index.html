@@ -28,10 +28,10 @@
         <td>{{casts}}</td>
       </tr>
       <tr>
-        <td colspan="2"><a href="{{movieUrl}}" target="_blank"><img src="{{imgUrl}}" width="80" height="60" alt="{{imgUrl}}"></a></td>
+        <td colspan="2"><a href="{{movieUrl}}" target="_blank"><img src="{{imgUrl}}" width="80" height="60"></a></td>
       </tr>
     </table>
-  </script>
+</script>
 
 <div id="visualization"></div>
 
@@ -44,11 +44,13 @@
    //how many times the movie api has been called,since we add one script tag each time,we may need to delete those tags in case too many tags inserted,currently delete manually when cnt>=5,detail in btn.onClick
   var apicnt=0;
   var rawdata
+
   vs=function(data){
       rawdata=data
+      var dataset=[];
       container = document.getElementById('visualization');
       container.innerHTML='';
-      dataset=[];
+      
       cnt=0;
       $.each(data.subjects,function(index,value){
         dataset.push(
