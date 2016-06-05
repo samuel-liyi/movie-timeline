@@ -67,7 +67,10 @@
           );
       // Configuration for the Timeline
       var options = {
-        template: template
+        template: template,
+        width: '100%',
+        height: '600px',
+        autoResize:true
       };      
       // Create a Timeline
       timeline = new vis.Timeline(container, items, options);
